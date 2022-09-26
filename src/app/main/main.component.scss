@@ -12,15 +12,31 @@ $top-height: 50px;
     .left {
         display: flex;
         flex-direction: column;
-        width: $left-width;
-        height: 100%;
-        transition: background-color ease-in-out 200ms;
-        font-family: Arial, Helvetica, sans-serif;
 
-        .category,
-        .selected-category {
-            padding: 3px 6px 3px 12px;
-            cursor: pointer;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: $top-height;
+            transition: background-color ease-in-out 200ms;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: column;
+            width: $left-width;
+            height: calc(100% - $top-height);
+            transition: background-color ease-in-out 200ms;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-y: auto;
+
+            .category,
+            .selected-category {
+                padding: 3px 6px 3px 12px;
+                cursor: pointer;
+            }
         }
     }
 
@@ -107,21 +123,28 @@ $top-height: 50px;
     color: black;
 
     .left {
-        background-color: #F0F0F0;
 
-        .category:hover {
-            background-color: #E0E0E0;
+        .title {
+            background-color: #E3E5E8;
         }
 
-        .selected-category {
-            background-color: #D8D8D8;
+        .categories {
+            background-color: #F2F3F5;
+
+            .category:hover {
+                background-color: #DCDFE3;
+            }
+
+            .selected-category {
+                background-color: #D1D5D9;
+            }
         }
     }
 
     .right {
 
         .top {
-            background-color: #F6F6F6;
+            background-color: #F2F3F5;
 
             .info {
                 .button {
@@ -142,27 +165,34 @@ $top-height: 50px;
     color: #D8CEBF;
 
     .left {
-        background-color: #202020;
 
-        .category {
-            color: #BBBBBB;
+        .title {
+            background-color: #202225;
         }
 
-        .category:hover {
-            background-color: #303030;
-            color: white;
-        }
+        .categories {
+            background-color: #2F3136;
 
-        .selected-category {
-            background-color: #383838;
-            color: white;
+            .category {
+                color: #BBBBBB;
+            }
+
+            .category:hover {
+                background-color: #3C3F45;
+                color: white;
+            }
+
+            .selected-category {
+                background-color: #42464D;
+                color: white;
+            }
         }
     }
 
     .right {
 
         .top {
-            background-color: #181818;
+            background-color: #2F3136;
 
             .info {
                 .button {
@@ -174,7 +204,7 @@ $top-height: 50px;
         }
 
         .cheat-sheet {
-            background-color: #0C0E11;
+            background-color: #36393F;
         }
     }
 }

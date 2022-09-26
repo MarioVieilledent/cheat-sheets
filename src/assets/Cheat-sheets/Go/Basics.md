@@ -1,6 +1,6 @@
 # Basics
 
-- Low level multi platform
+- Low level, multi platform
 - Compiled with fast compile time
 - Made to be productive efficiently
 - Built-in simple concurrency

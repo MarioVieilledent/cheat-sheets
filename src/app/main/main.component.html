@@ -1,8 +1,13 @@
 <div class="container" [ngClass]="appTheme">
     <div class="left">
-        <div [ngClass]="selectedCategory === category ? 'selected-category' : 'category'"
-            *ngFor="let category of categories" (click)="selectCategory(category)">
-            {{category}}
+        <div class="title">
+            <h1>Cheat sheets</h1>
+        </div>
+        <div class="categories">
+            <div [ngClass]="selectedCategory === category ? 'selected-category' : 'category'"
+                *ngFor="let category of categories" (click)="selectCategory(category)">
+                {{category}}
+            </div>
         </div>
     </div>
     <div class="right">
