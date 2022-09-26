@@ -18,12 +18,14 @@ export class MainComponent implements OnInit {
     'Info',
     'Basics',
     'Variables_and_types',
-    'Operands and conditions',
-    'Arrays and maps',
+    'Operands_and_conditions',
+    'Arrays_and_maps',
     'Iterating',
-    'Structures',
+    'Classes_or_structures',
     'Random',
-    'Concurrency'
+    'JSON',
+    'Concurrency',
+    'HTTP'
   ];
 
   selectedCategory: string = this.categories[0];

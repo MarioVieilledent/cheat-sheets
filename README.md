@@ -1,27 +1,45 @@
 # CheatSheets
 
-A web app to quickly access to cheat sheets in different programming languages.
+A web app to quickly access to simple cheat sheets in different programming languages.
+
+## Contribute
+
+> I would love to get help writing cheat sheets.
+> - Write a cheat sheet
+> - Add a new section or a new language
+> - Correcting mistakes
+
+**Feel free to fork this repo and make pull requests**
+
+Cheat sheets are stored in `./src/assets/<Language>/<Cheat-sheet-category>.md`
 
 ## Ideas
 
+Cheat sheets are written in `markdown` files.
+
 ### Languages
 
+- C
+- C++
+- C#
 - Javascript
+- Typescript
 - Python
 - Rust
 - Go
 - Java
+- Scala
 
-### Cheat sheets
+### Cheat sheets categories
 
-- Info : paradigms, typing, etc.
-- Basics : comments, variables functions
-- Types : types, casting, printing
-- Operands & operators
-- Conditions and loops
-- Arrays : creating, accessing, inserting, sorting, etc.
-- Maps : creating, accessing, inserting, etc.
+- Info
+- Basics
+- Variables_and_types
+- Operands_and_conditions
+- Arrays_and_maps
 - Iterating
-- Structures & methods
-- Random int, float, char
+- Classes_or_structures
+- Random
+- JSON
 - Concurrency
+- HTTP

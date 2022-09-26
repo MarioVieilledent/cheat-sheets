@@ -23,7 +23,8 @@
         </div>
         <div class="cheat-sheet">
             <div *ngIf="selectedLanguage && selectCategory">
-                <markdown lineHighlight [src]="'assets/' + selectedLanguage + '/' + selectedCategory + '.md'"
+                <markdown lineHighlight
+                    [src]="'assets/Cheat-sheets/' + selectedLanguage + '/' + selectedCategory + '.md'"
                     (load)="onLoad($event)" (error)="onError($event)">
                 </markdown>
             </div>

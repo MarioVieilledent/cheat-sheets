@@ -15,6 +15,7 @@ $top-height: 50px;
         width: $left-width;
         height: 100%;
         transition: background-color ease-in-out 200ms;
+        font-family: Arial, Helvetica, sans-serif;
 
         .category,
         .selected-category {
@@ -35,6 +36,7 @@ $top-height: 50px;
             width: 100%;
             height: $top-height;
             transition: background-color ease-in-out 200ms;
+            font-family: Arial, Helvetica, sans-serif;
 
             .languages {
                 display: flex;
