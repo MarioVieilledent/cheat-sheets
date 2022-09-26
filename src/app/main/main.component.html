@@ -1,0 +1,32 @@
+<div class="container" [ngClass]="appTheme">
+    <div class="left">
+        <div [ngClass]="selectedCategory === category ? 'selected-category' : 'category'"
+            *ngFor="let category of categories" (click)="selectCategory(category)">
+            {{category}}
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div *ngIf="languages" class="languages">
+                <i *ngFor="let lang of languages | keyvalue"
+                    [ngClass]="lang.value.logo + ' colored' + ((lang.key === selectedLanguage) ? ' selected' : '')"
+                    (click)="selectLanguage(lang.key)"></i>
+            </div>
+            <div class="info">
+                <div class="button" *ngIf="appTheme === 'light'" (click)="setAppTheme('dark')">
+                    <img src="assets/sun-solid.svg" alt="Theme toggle button">
+                </div>
+                <div class="button" *ngIf="appTheme === 'dark'" (click)="setAppTheme('light')">
+                    <img src="assets/moon-solid.svg" alt="Theme toggle button">
+                </div>
+            </div>
+        </div>
+        <div class="cheat-sheet">
+            <div *ngIf="selectedLanguage && selectCategory">
+                <markdown lineHighlight [src]="'assets/' + selectedLanguage + '/' + selectedCategory + '.md'"
+                    (load)="onLoad($event)" (error)="onError($event)">
+                </markdown>
+            </div>
+        </div>
+    </div>
+</div>
