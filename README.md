@@ -16,30 +16,3 @@ Cheat sheets are stored in `./src/assets/<Language>/<Cheat-sheet-category>.md`
 ## Ideas
 
 Cheat sheets are written in `markdown` files.
-
-### Languages
-
-- C
-- C++
-- C#
-- Javascript
-- Typescript
-- Python
-- Rust
-- Go
-- Java
-- Scala
-
-### Cheat sheets categories
-
-- Info
-- Basics
-- Variables_and_types
-- Operands_and_conditions
-- Arrays_and_maps
-- Iterating
-- Classes_or_structures
-- Random
-- JSON
-- Concurrency
-- HTTP
